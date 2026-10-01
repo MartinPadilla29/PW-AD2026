@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 5</title>
+    </head>
+    <body>
+        <header>
+            <!-- Encabezado de la pagina -->
+            <h1>CineMundo: Tienda de Películas</h1>
+            <p>
+                Tu rincón favorito para comprar peliculas clásicas y de estreno en formato fisico y digital.
+            </p>
+        </header>
+        <nav>
+            <!-- Menu de navegacion principal -->
+             <ul>
+                <li><a href="#peliculaDelMes">Película del mes</a></li>
+                <li><a href="#clasificacionGeneros">Clasificación y géneros</a></li>
+                <li><a href="#catalogoPrecios">Catálogo y precios</a></li>
+                <li><a href="#solicitudPedido">Solicitud de pedido o reserva</a></li>
+                <li><a href="#atencionCliente">Atención al cliente</a></li>
+             </ul>
+        </nav>
+        <hr>
+        <main>
+            <section>
+                <!-- Sección de pelicula del mes -->
+                 <h2 id="peliculaDelMes">Película del Mes</h2>
+                 <img  width="250px" src="https://mundocine.es/wp-content/uploads/2025/12/la-odisea-2026-christopher-nolan-poster.webp">
+                 <h3>¡Una verdadera Odisea!</h3>
+                 <p>
+                    La película La Odisea (The Odyssey, 2026) es una adaptación épica del poema homérico. Sigue a Odiseo, rey de Ítaca, en un viaje de 
+                    diez años de regreso a casa después de la caída de Troya.<br><br>
+                    Puedes ver más detalles y reseñas en <a href="https://www.imdb.com/es/title/tt33764258/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_la%20odi">IMDb</a>
+                 </p>
+            </section>
+            <hr>
+            <section>
+                <!-- Clasificación y generos -->
+                 <h2 id="clasificacionGeneros">Clasificación y Géneros</h2>
+                 <h3>Géneros disponibles</h3>
+                 <ul>
+                    <li>Ciencia Ficción</li>
+                    <li>Animación Familiar</li>
+                    <li>Suspenso y misterio</li>
+                    <li>Comedia Clásica</li>
+                 </ul>
+                 <h3>Las 3 más vendidas de la semana</h3>
+                 <ol>
+                    <li>El Misterio de la Mansión (Edición Especial)</li>
+                    <li>Aventura Espacial</li>
+                    <li>Risas en la Gran Ciudad</li>
+                 </ol>
+                 <h3>Formatos físicos disponibles</h3>
+                 <ul>
+                    <li>Blu-ray 4K Ultra HD</li>
+                    <li>DVD Estándar</li>
+                 </ul>
+                 <h4>Nota importante</h4>
+                 <p><em>* Todos los discos cuentan con garantía por defectos de fábrica</em></p>
+            </section>
+            <hr>
+            <section>
+                <!-- Sección de catalogos y precios -->
+                 <h2 id="catalogoPrecios">Catálogo y Precios</h2>
+                 <table border="1">
+                    <tr>
+                        <th>Título</th>
+                        <th>Género</th>
+                        <th>Año</th>
+                        <th>Formato</th>
+                        <th>Precio (USD)</th>
+                    </tr>
+                    <tr>
+                        <td>Aventura Espacial</td>
+                        <td>Ciencia Ficción</td>
+                        <td>2024</td>
+                        <td>Blu-ray 4K</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>El Misterio de la Mansión</td>
+                        <td>Suspenso</td>
+                        <td>2023</td>
+                        <td>DVD</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Risas en la Gran Ciudad</td>
+                        <td>Comedia</td>
+                        <td>2022</td>
+                        <td>Blu-ray</td>
+                        <td>$18.50</td>
+                    </tr>
+                 </table>
+            </section>
+            <hr>
+            <section>
+                <!-- Sección de solicitud de pedido o reserva -->
+                 <h2 id="solicitudPedido">Solicitud de Pedido o Reserva</h2>
+                 <p>Completa el formulario para reservar tu película favorita.</p>
+                 <form action="#" method="post">
+                    <fieldset>
+                        <legend>Datos personales</legend><br>
+                        <label>Nombre Completo</label><br>
+                        <input type="text" value="Ej. Ana Gómez"><br><br>
+                        <label>Correo Electrónico</label><br>
+                        <input type="email" value="Correo@ejemplo.com">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Detalles de la compra</legend><br>
+                        <label>Selecciona la película</label><br>
+                        <select>
+                            <option value="aventura">Aventura Espacial ($25.00)</option>
+                            <option value="mansion">El Misterio de la Mansión ($15.00)</option>
+                            <option value="risas">Risas en la Gran Ciudad ($18.50)</option>
+                        </select><br><br>
+                        <label>Formato de entrega</label><br><br>
+                        <input type="radio" value="Disco Fisico" name="radio"><label>Disco Físico (Envío a domicilio)</label><br>
+                        <input type="radio" value="Digital" name="radio"><label>Copia digital (Descarga directa)</label><br><br>
+                        <label>Opciones adicionales</label><br><br>
+                        <input type="checkbox"><label>Incluir envoltura para regalo</label><br>
+                        <input type="checkbox"><label>Solicitar folleto con ficha técnica</label><br><br>
+                        <label>Comentarios o indicaciones de entrega:</label><br>
+                        <textarea rows="4" cols="40">Escribe aquí cualquier indicación especial...</textarea>
+                    </fieldset>
+                    <br><br>
+                    <input type="submit" value="Enviar pedido">
+                    <input type="reset" value="Limpiar formulario">
+                 </form>
+            </section>
+            <hr>
+        </main>
+        <footer>
+            <h2 id="atencionCliente">Atención al Cliente</h2>
+            <p>¿Tienes dudas o buscas una película descatalogada? Escribenos a <a href="#">soporte@cinemundo.ejemplo.com</a></p>
+            <p><strong>Cine Mundo S.A.</strong> 2026 - Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>
