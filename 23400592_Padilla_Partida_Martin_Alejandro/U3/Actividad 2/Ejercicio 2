@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(15, 14, 14);
+            color: rgb(230, 226, 226);
+        }
+
+        header {
+            background-color: rgb(51, 49, 49);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(127, 125, 125);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: rgb(140, 7, 7);
+            border-bottom: 2px solid rgb(140, 7, 7);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .tarjeta {
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #646060;
+            border: 1px solid #646060;
+            border-radius: 15px;
+
+        }
+
+        .descripcion {
+            font-family: Arial, sans-serif;
+            color: #231f1f;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .video-contenedor {
+            margin-top: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: #000;
+        }
+
+        .video-contenedor video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .tabla-contenedor {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #646060;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .tabla {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .tabla th {
+            background-color: #231f1f;
+            color: #ffffff;
+            padding: 15px 20px;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+
+        }
+
+        .tabla td {
+            padding: 14px 20px;
+            color: #231f1f;
+            font-size: 16px;
+            border-bottom: 1px solid #231f1f;
+
+        }
+
+        .tabla tbody tr:nth-child(even) {
+            background-color: #4b4c4c;
+        }
+
+        .final ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .final li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .final a {
+            text-decoration: none;
+            color: rgb(127, 125, 125);
+        }
+
+        .final p {
+            text-align: center;
+            color: #000;
+
+        }
+
+        footer {
+            background-color: rgb(51, 49, 49);
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #titulo {
+            color: rgb(76, 6, 6);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Titulo Soda Stereo-->
+        <h1 id="titulo">SODA ESTEREO</h1>
+
+        <!-- Indice de contenidos -->
+        <nav>
+            <ul>
+                <li><a href="#fotografia"><strong>Fotografía del grupo</strong></a></a></li>
+                <li><a href="#integrantes"><strong>Integrantes</strong></strong></a></li>
+                <li><a href="#discografia"><strong>Discografia</strong></a></li>
+                <li><a href="#enlaces"><strong>Enaleces</strong></strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Descripción de la banda -->
+    <section class="tarjeta">
+        <p class="descripcion">
+            <strong>Soda Stereo</strong> fue una banda de rock argentina formada en 1982 originalmente por el cantante y
+            guitarrista Gustavo Cerati, el bajista Zeta Bosio y el baterista Charly Alberti.
+            Es considerada por un sector de la crítica especializada como la banda más importante, popular e influyente
+            del
+            rock en español de todos los tiempos y una leyenda de la música latinoamericana.
+        </p>
+    </section>
+
+    <!-- Fotografia del grupo -->
+    <section id="fotografia">
+        <div class="video-contenedor">
+            <video controls width="100%">
+                <source src="https://sodastereo.com/video/portada2_web.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+    </section>
+    <!-- Integrantes -->
+    <h2 id="integrantes">Integrantes</h2>
+
+    <section class="tabla-contenedor">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Instrumento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gustavo Cerati</td>
+                    <td>Vocalista y Guitarrista</td>
+                </tr>
+                <tr>
+                    <td>Hector Zeta Bosio</td>
+                    <td>Bajista y Coros</td>
+                </tr>
+                <tr>
+                    <td>Charly Alberti</td>
+                    <td>Baterista y Percusionista</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Discografía -->
+    <h2 id="discografia">Discografía</h2>
+    <section class="tabla-contenedor">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Año</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Soda Estero</td>
+                    <td>1984</td>
+                </tr>
+                <tr>
+                    <td>Nada Personal</td>
+                    <td>1985</td>
+                </tr>
+                <tr>
+                    <td>
+                        Signos
+                    </td>
+                    <td>1986</td>
+                </tr>
+                <tr>
+                    <td>Doble Vida</td>
+                    <td>1988</td>
+                </tr>
+                <tr>
+                    <td>Canción Animal</td>
+                    <td>1990</td>
+                </tr>
+                <tr>
+                    <td>Dynamo</td>
+                    <td>1992</td>
+                </tr>
+                <tr>
+                    <td>Sueño Stereo</td>
+                    <td>1995</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Enlaces Y Final -->
+    <footer class="enlaces" id="enlaces">
+        <div class="final">
+            <ul>
+                <li><a href="https://sodastereo.com/"><strong>Sitio Oficial</strong></a></li>
+                <li><a href="https://www.instagram.com/sodastereo/"><strong>Instagram</strong></a></li>
+                <li><a href="https://www.youtube.com/channel/UC_MAancGcA0YeACrpSwokhQ"><strong>Youtube</strong></a></li>
+            </ul>
+            <p>Todos los derechos reservados © 2026.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
