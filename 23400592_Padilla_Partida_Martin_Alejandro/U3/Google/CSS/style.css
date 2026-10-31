@@ -1,0 +1,122 @@
+/* 1. Primero configuramos los estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Con esto aseguramos que padding y border no alteren lo alto/ancho total
+                               de los elementos */
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+/* Eliminar los estilos por defecto de las listas */
+ul {
+    list-style: none;
+}
+
+/* Eliminar el subrayado por defecto de los enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 2. Header y navegacion superior */
+header {
+    width: 100%;
+    padding: 8px;
+}
+
+.nav-top ul {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos del menú (Gmail, Imágenes, Acceder) hacia la esquina derecha */
+    align-items: center; /* Centra verticalmente los elementos dentro de la barra de navegación */
+    gap: 15px; /* Espacio uniforme entre cada elemento del menú */
+    padding-right: 15px;
+}
+
+.nav-top a {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* Boton de acceder */
+.btn-login {
+    background-color: #1a73e8;
+    color: #ffffff !important;
+    padding: 8px 23px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-bottom: 80px;
+}
+
+/* Logo de google  */
+#google-logo {
+    display: flex;
+    font-size: 85px;
+    font-family: 'product sans', Arial, sans-serif;
+    font-weight: bold;
+    user-select: none;
+}
+
+/* Colores especificos de letra por letra del logo */
+#google-logo .g {
+    color: #4285f4;
+}
+#google-logo .o1 {
+    color: #ea4335;;
+}
+#google-logo .o2 {
+    color: #fbbc05;
+}
+#google-logo .g2 {
+    color: #4285f4;
+}
+#google-logo .l {
+    color: #34a853;
+}
+#google-logo .e {
+    color: #ea4335;
+}
+
+/* Contenedor de busqueda */
+.search-container {
+    width: 582px;
+    max-width: 90%;
+    border: 1px solid #dfe1ed;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    margin-bottom: 28px;
+
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 12px 8px;
+    resize: none;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 44px;
+    line-height: 20px;
+}
+
