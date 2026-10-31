@@ -120,3 +120,53 @@ header {
     line-height: 20px;
 }
 
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+footer {
+  background-color: #f2f2f2; /* Fondo gris claro institucional de Google para el footer */
+  color: #70757a;
+  font-size: 14px;
+  width: 100%;
+  border-top: 1px solid #dadce0; /* Línea divisoria superior */
+}
+
+.country {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0; /* Línea divisoria que separa la región de los enlaces */
+  color: rgba(0, 0, 0, .54);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between; /* Separa los enlaces izquierdos hacia la izquierda y los derechos hacia la derecha */
+  flex-wrap: wrap; /* Permite que se acomoden en pantallas pequeñas */
+  padding: 0 20px;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links ul li a {
+  display: block;
+  padding: 15px;
+  color: #70757a;
+}
