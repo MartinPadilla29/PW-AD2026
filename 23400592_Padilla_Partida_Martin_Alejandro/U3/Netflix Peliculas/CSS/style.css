@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #242424;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    width: 100%;
+    padding: 8px;
+}
+
+.app-container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 20px auto; 
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 22px;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-right ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right a {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #797878;
+}
+
+.catalogo {padding: 8px;}
+.catalogo h1 {color: #ffffff;}
+.catalogo p {color: #fffefe; margin-top: 5px;}
+
+.generos {
+    margin-top: 20px;
+}
+
+.generos ul {
+    display: flex;
+    padding: 8px;
+    justify-content: baseline;
+    gap: 7px;
+}
+
+.btn-todas {
+    background-color: #E50914;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.btn-similar {
+    background-color: #797878;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.lista-peliculas {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 20px;
+    gap: 15px;
+}
+ 
+.pelicula {
+    background-color: #262626;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pelicula img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.pelicula-info {
+    padding: 12px 0;
+    text-align: left;
+}
+
+.pelicula-titulo {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.pelicula-fecha {
+    font-size: 13px;
+    color: #aaaaaa;
+}
